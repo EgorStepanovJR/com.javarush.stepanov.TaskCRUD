@@ -14,11 +14,11 @@ public class Task {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int taskId;
+    private Integer taskId;
 
     @Column
     private String description;
 
-    @Column
+    @Enumerated(EnumType.ORDINAL)
     private Status status;
 }

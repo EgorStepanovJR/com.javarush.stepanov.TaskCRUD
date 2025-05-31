@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="container">
+            <h1>TaskApp</h1>
+
+            <form>
+                <div class="form-group">
+                    <label for="AddNewTask">Новая задача</label>
+                    <input type="text" id="AddNewTask" placeholder="Добавьте новую задачу">
+                </div>
+
+                <div class="form-group">
+                    <label for="Description">Описание задачи</label>
+                    <input type="text" id="Description" placeholder="Опишите задачу">
+                </div>
+
+                <button type="submit" class="submit-button">Создать</button>
+            </form>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Задача</th>
+                        <th>Описание</th>
+                        <th>Статус</th>
+                        <th>Действия</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Доделать прогу</td>
+                        <td>Написать слои</td>
+                        <td>в процессе</td>
+                        <td class="action-buttons" >
+                            <button class="edit-button">изменить статус</button>
+                            <button class="delete-button">удалить задачу</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
